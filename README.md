@@ -1,6 +1,4 @@
-====================================================================
 Fair Clustering Based on Counterfactual Distances
-====================================================================
 
 This repository provides implementations of multiple fairness-aware 
 clustering algorithms for high-dimensional tabular data. These methods 
