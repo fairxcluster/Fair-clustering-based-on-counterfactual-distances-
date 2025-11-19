@@ -1,4 +1,5 @@
-Fair Clustering Based on Counterfactual Distances
+UniFair: A Unified fair clustering approach based on separation
+and compactness.
 
 This repository provides implementations of multiple fairness-aware 
 clustering algorithms for high-dimensional tabular data. These methods 
