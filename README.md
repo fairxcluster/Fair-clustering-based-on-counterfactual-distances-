@@ -10,8 +10,8 @@ The repository includes:
 
 1. Separation Fair k-Means
 2. Social Fair k-Means
-3. Separation–Social Fair k-Means (combined method)
-4. Deep Social and Deep Separation Fair k-Means
+3. Unifair k-Means (combined method)
+4. Deep Separation, Deep Social & Deep Unifair Fair k-Means
 
 Each method addresses fairness in clustering from a different 
 perspective, and all are implemented in a modular and reproducible form.
@@ -52,7 +52,7 @@ This method ensures that cluster centers faithfully represent both
 groups, promoting balanced and socially fair cluster assignments.
 
 --------------------------------------------------------------------
-3. Separation–Social Fair k-Means (Combined Method)
+3. Unifair k-Means (Combined Method)
 --------------------------------------------------------------------
 
 This algorithm combines the two fairness notions above.
@@ -70,7 +70,7 @@ This leads to clusterings that are both structurally fair (in decision
 geometry) and socially fair (in demographic distribution).
 
 --------------------------------------------------------------------
-4. Deep Fair Clustering (Deep Social & Deep Separation Fair k-Means)
+4. Deep Fair Clustering (Deep Separation, Deep Social & Deep Unifair Fair k-Means)
 --------------------------------------------------------------------
 
 The deep versions extend the fairness models by incorporating a neural 
@@ -108,9 +108,10 @@ The code automatically handles preprocessing and scaling.
 2. Select which fairness-aware k-means variant to run:
    - separation
    - social
-   - separation-social
+   - unifair
    - deep-social
    - deep-separation
+   - deep-unifair
 3. The script trains the clustering model across multiple seeds and λ values.
 4. Plots and metrics are automatically saved in the `results/` directory.
 
