@@ -8,7 +8,7 @@ from demographic groups and counterfactual reasoning.
 The repository includes:
 
 1. Separation Fair k-Means
-2. Social Fair k-Means
+2. Socially Fair k-Means
 3. Unifair k-Means (combined method)
 4. Deep Separation, Deep Social & Deep Unifair Fair k-Means
 
@@ -34,10 +34,10 @@ cluster boundaries. This reduces the risk of systematically placing one
 group near ambiguous regions of the space.
 
 --------------------------------------------------------------------
-## Social Fair k-Means
+## Socially Fair k-Means
 --------------------------------------------------------------------
 
-Social Fair k-means enforces fairness by encouraging each cluster to 
+Socially Fair k-means enforces fairness by encouraging each cluster to 
 represent demographic groups proportionally to how they appear in the 
 dataset.
 
@@ -58,7 +58,7 @@ This algorithm combines the two fairness notions above.
 
 The goal is to simultaneously enforce:
 - **Separation fairness** (equal distance from decision boundaries)
-- **Social fairness** (equal representation within clusters)
+- **Socially fairness** (equal representation within clusters)
 
 The method optimizes a joint objective that integrates:
 - k-means clustering quality,
