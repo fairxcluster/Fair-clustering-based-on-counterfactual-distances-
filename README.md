@@ -1,4 +1,4 @@
-UniFair: A Unified fair clustering approach based on separation
+# UniFair: A Unified fair clustering approach based on separation
 and compactness.
 
 This repository provides implementations of multiple fairness-aware 
@@ -17,7 +17,7 @@ Each method addresses fairness in clustering from a different
 perspective, and all are implemented in a modular and reproducible form.
 
 --------------------------------------------------------------------
-1. Separation Fair k-Means
+## Separation Fair k-Means
 --------------------------------------------------------------------
 
 Separation Fair k-means enforces fairness by requiring that demographic 
@@ -35,7 +35,7 @@ cluster boundaries. This reduces the risk of systematically placing one
 group near ambiguous regions of the space.
 
 --------------------------------------------------------------------
-2. Social Fair k-Means
+## Social Fair k-Means
 --------------------------------------------------------------------
 
 Social Fair k-means enforces fairness by encouraging each cluster to 
@@ -52,7 +52,7 @@ This method ensures that cluster centers faithfully represent both
 groups, promoting balanced and socially fair cluster assignments.
 
 --------------------------------------------------------------------
-3. Unifair k-Means (Combined Method)
+## Unifair k-Means (Combined Method)
 --------------------------------------------------------------------
 
 This algorithm combines the two fairness notions above.
@@ -70,7 +70,7 @@ This leads to clusterings that are both structurally fair (in decision
 geometry) and socially fair (in demographic distribution).
 
 --------------------------------------------------------------------
-4. Deep Fair Clustering (Deep Separation, Deep Social & Deep Unifair Fair k-Means)
+## Deep Fair Clustering (Deep Separation, Deep Social & Deep Unifair Fair k-Means)
 --------------------------------------------------------------------
 
 The deep versions extend the fairness models by incorporating a neural 
@@ -115,3 +115,5 @@ The code automatically handles preprocessing and scaling.
 3. The script trains the clustering model across multiple seeds and λ values.
 4. Plots and metrics are automatically saved in the `results/` directory.
 
+### Acknowledgments
+The research project is implemented in the framework of H.F.R.I. call ``Basic research Financing (Horizontal support of all Sciences)'' under the National Recovery and Resilience Plan ``Greece 2.0'' funded by the European Union - NextGenerationEU (H.F.R.I. ProjectNumber: 15940).
