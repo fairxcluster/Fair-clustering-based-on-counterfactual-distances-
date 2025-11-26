@@ -87,7 +87,7 @@ Both fairness mechanisms (separation fairness and social fairness) can
 be activated in the deep setting.
 
 --------------------------------------------------------------------
-5. Included Datasets
+### Included Datasets
 --------------------------------------------------------------------
 
 The repository supports the following datasets:
@@ -101,7 +101,7 @@ Each dataset includes a binary sensitive attribute (e.g., gender).
 The code automatically handles preprocessing and scaling.
 
 --------------------------------------------------------------------
-6. How to Run
+### How to Run
 --------------------------------------------------------------------
 
 1. Choose a dataset when prompted (e.g., "adult", "credit", "student", "bank").
