@@ -99,6 +99,17 @@ The repository supports the following datasets:
 Each dataset includes a binary sensitive attribute (e.g., gender).  
 The code automatically handles preprocessing and scaling.
 
+## Preparing the MNIST Data
+
+This project requires MNIST in `.npy` format.  
+These files are not included in the repository because they are large.
+
+To generate them automatically, run:
+
+```bash
+pip install numpy scikit-learn
+python prepare_data.py
+```
 --------------------------------------------------------------------
 ### How to Run
 --------------------------------------------------------------------
